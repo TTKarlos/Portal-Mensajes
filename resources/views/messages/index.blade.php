@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Portal Misional - Elder Hube</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2270%22>EH</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>EH</text></svg>">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700&display=swap" rel="stylesheet" />
@@ -51,7 +52,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             opacity: 0.8;
         }
 
@@ -406,6 +407,47 @@
             color: #1f2937;
         }
 
+        /* Estilos para las etiquetas de relación */
+        .relationship-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+
+        .relationship-familia {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .relationship-amigo {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .relationship-miembro_barrio {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .relationship-misionero {
+            background-color: #fef3c7;
+            color: #92400e;
+        }
+
+        .relationship-investigador {
+            background-color: #e0e7ff;
+            color: #4338ca;
+        }
+
+        .relationship-otro {
+            background-color: #f3f4f6;
+            color: #4b5563;
+        }
+
         @media (hover: hover) {
             .pagination-active:active {
                 transform: translateY(0);
@@ -452,14 +494,15 @@
                     <div class="lg:flex lg:items-center lg:justify-between">
                         <div class="lg:w-1/3 flex justify-center mb-12 lg:mb-0">
                             <div class="relative">
-                                  <div class="absolute -top-3 -left-3 z-10">
-                                        <img
-                                            src="https://flagcdn.com/w40/ec.png"
-                                            alt="Bandera de Ecuador"
-                                            class="h-10 w-auto rounded shadow-md"
-                                        >
-                                    </div>
-                                    <img src="{{ asset('img/Elder-Hube.jpeg') }}" alt="Elder Hube" class="elder-photo h-72 w-72 object-cover rounded-full">                                <div class="absolute -bottom-3 -right-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full px-5 py-2 text-sm font-bold shadow-lg">
+                                <div class="absolute -top-3 -left-3 z-10">
+                                    <img
+                                        src="https://flagcdn.com/w40/ec.png"
+                                        alt="Bandera de Ecuador"
+                                        class="h-10 w-auto rounded shadow-md"
+                                    >
+                                </div>
+                                <img src="{{ asset('img/Elder-Hube.jpeg') }}" alt="Elder Hube" class="elder-photo h-72 w-72 object-cover rounded-full">
+                                <div class="absolute -bottom-3 -right-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full px-5 py-2 text-sm font-bold shadow-lg">
                                     Sirviendo en Ecuador
                                 </div>
                             </div>
@@ -503,16 +546,44 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         @forelse($messages as $message)
-                            <div class="message-card" data-message-id="{{ $message->id }}">
+                            <div class="message-card" data-message-id="{{ $message->id }}" data-relationship="{{ $message->relationship }}">
                                 <div class="p-6">
-                                    <div class="flex items-center mb-4">
-                                        <div class="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">
-                                            {{ strtoupper(substr($message->name, 0, 1)) }}
+                                    <div class="flex items-center justify-between mb-4">
+                                        <div class="flex items-center">
+                                            <div class="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-xl">
+                                                {{ strtoupper(substr($message->name, 0, 1)) }}
+                                            </div>
+                                            <div class="ml-4">
+                                                <h3 class="font-bold text-lg text-gray-900">{{ $message->name }}</h3>
+                                                <p class="text-sm text-gray-500">{{ $message->created_at->format('d/m/Y H:i') }}</p>
+                                            </div>
                                         </div>
-                                        <div class="ml-4">
-                                            <h3 class="font-bold text-lg text-gray-900">{{ $message->name }}</h3>
-                                            <p class="text-sm text-gray-500">{{ $message->created_at->format('d/m/Y H:i') }}</p>
-                                        </div>
+                                        @if(isset($message->relationship) && !empty($message->relationship))
+                                            @php
+                                                // Definir colores para cada tipo de relación
+                                                $relationshipColors = [
+                                                    'familia' => 'bg-red-100 text-red-800',
+                                                    'amigo' => 'bg-blue-100 text-blue-800',
+                                                    'miembro_barrio' => 'bg-green-100 text-green-800',
+                                                    'misionero' => 'bg-purple-100 text-purple-800',
+                                                    'investigador' => 'bg-yellow-100 text-yellow-800',
+                                                    'otro' => 'bg-gray-100 text-gray-800',
+                                                ];
+
+                                                // Obtener el color según la relación o usar el color por defecto
+                                                $colorClass = $relationshipColors[$message->relationship] ?? 'bg-gray-100 text-gray-800';
+
+                                                // Convertir a CamelCase
+                                                $relationshipParts = explode('_', $message->relationship);
+                                                $relationshipCamelCase = '';
+                                                foreach ($relationshipParts as $part) {
+                                                    $relationshipCamelCase .= ucfirst($part);
+                                                }
+                                            @endphp
+                                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {{ $colorClass }}">
+                                                {{ $relationshipCamelCase }}
+                                            </span>
+                                        @endif
                                     </div>
                                     <div class="prose prose-blue">
                                         <p class="text-gray-700 message-content">{{ $message->content }}</p>
@@ -790,6 +861,7 @@
                         <div class="ml-4">
                             <h4 id="modalName" class="font-bold text-lg text-gray-900">Nombre del remitente</h4>
                             <p id="modalDate" class="text-sm text-gray-500">Fecha</p>
+                            <div id="modalRelationship" class="relationship-tag mt-2 hidden"></div>
                         </div>
                     </div>
                     <div class="modal-content-wrapper">
@@ -818,7 +890,30 @@
             const modalName = document.getElementById('modalName');
             const modalDate = document.getElementById('modalDate');
             const modalContent = document.getElementById('modalContent');
+            const modalRelationship = document.getElementById('modalRelationship');
             const shareWhatsAppMainBtn = document.getElementById('shareWhatsAppMainBtn');
+
+            // Función para convertir relación a formato CamelCase
+            function formatRelationship(relationship) {
+                if (!relationship) return '';
+
+                // Reemplazar guiones bajos con espacios
+                const words = relationship.split('_');
+
+                // Convertir primera letra de cada palabra a mayúscula
+                const camelCaseWords = words.map(word =>
+                    word.charAt(0).toUpperCase() + word.slice(1)
+                );
+
+                // Unir las palabras con espacios
+                return camelCaseWords.join(' ');
+            }
+
+            // Función para obtener clase de color según la relación
+            function getRelationshipClass(relationship) {
+                if (!relationship) return '';
+                return `relationship-${relationship}`;
+            }
 
             // Copiar enlace al portapapeles
             copyLinkBtn.addEventListener('click', function() {
@@ -838,29 +933,31 @@
             });
 
             // Compartir por WhatsApp desde la sección principal
-           shareWhatsAppMainBtn.addEventListener('click', function(e) {
-               e.preventDefault();
-               const portalUrl = '{{ route('home') }}';
+            shareWhatsAppMainBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const portalUrl = '{{ route('home') }}';
 
-               const whatsappMessage =
-               "Portal Misional - Elder Hube\n\n" +
-               "Te invito a visitar el Portal Misional dedicado a Elder Hube, quien está sirviendo como misionero en Ecuador.\n\n" +
-               "En este portal podrás:\n" +
-               "- Dejar mensajes de apoyo y aliento\n" +
-               "- Compartir recuerdos y experiencias\n" +
-               "- Conectar con otros que apoyan su misión\n\n" +
-               "Cada mensaje significa mucho para él durante su tiempo de servicio misional.\n\n" +
-               "Visita el portal: " + portalUrl + "\n\n" +
-               "¡Gracias por tu apoyo al Elder Hube!";
+                // Mensaje con emojis usando puntos de código Unicode para máxima compatibilidad
+                const whatsappMessage =
+                    "\u{1F31F} Portal Misional - Elder Hube \u{1F31F}\n\n" +
+                    "Te invito a visitar el Portal Misional dedicado a Elder Hube, quien está sirviendo como misionero en Ecuador \u{1F1EA}\u{1F1E8}\n\n" +
+                    "\u{1F4DD} En este portal podrás:\n" +
+                    "- Dejar mensajes de apoyo y aliento \u{2764}\u{FE0F}\n" +
+                    "- Compartir recuerdos y experiencias \u{1F4AC}\n" +
+                    "- Conectar con otros que apoyan su misión \u{1F44B}\n\n" +
+                    "Cada mensaje significa mucho para él durante su tiempo de servicio misional.\n\n" +
+                    "\u{1F517} Visita el portal: " + portalUrl + "\n\n" +
+                    "\u{2728} ¡Gracias por tu apoyo al Elder Hube! \u{2728}";
 
-               const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
-               window.open(whatsappUrl, '_blank');
-           });
+                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
+                window.open(whatsappUrl, '_blank');
+            });
 
             // Abrir modal al hacer clic en una tarjeta de mensaje
             messageCards.forEach(card => {
                 card.addEventListener('click', function() {
                     const messageId = this.getAttribute('data-message-id');
+                    const relationship = this.getAttribute('data-relationship');
                     const name = this.querySelector('h3').textContent;
                     const date = this.querySelector('p.text-sm').textContent;
                     const content = this.querySelector('.message-content').textContent;
@@ -871,6 +968,15 @@
                     modalName.textContent = name;
                     modalDate.textContent = date;
                     modalContent.textContent = content;
+
+                    // Mostrar relación en el modal si existe
+                    if (relationship) {
+                        modalRelationship.textContent = formatRelationship(relationship);
+                        modalRelationship.className = 'relationship-tag ' + getRelationshipClass(relationship);
+                        modalRelationship.classList.remove('hidden');
+                    } else {
+                        modalRelationship.classList.add('hidden');
+                    }
 
                     messageModal.classList.add('active');
                     document.body.style.overflow = 'hidden'; // Prevenir scroll
