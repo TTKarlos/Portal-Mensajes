@@ -933,25 +933,26 @@
             });
 
             // Compartir por WhatsApp desde la sección principal
-            shareWhatsAppMainBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const portalUrl = '{{ route('home') }}';
+           // Compartir por WhatsApp desde la sección principal
+           shareWhatsAppMainBtn.addEventListener('click', function(e) {
+               e.preventDefault();
+               const portalUrl = "https://elderhube.karloscode.dev";
 
-                // Mensaje con emojis usando puntos de código Unicode para máxima compatibilidad
-                const whatsappMessage =
-                    "\u{1F31F} Portal Misional - Elder Hube \u{1F31F}\n\n" +
-                    "Te invito a visitar el Portal Misional dedicado a Elder Hube, quien está sirviendo como misionero en Ecuador \u{1F1EA}\u{1F1E8}\n\n" +
-                    "\u{1F4DD} En este portal podrás:\n" +
-                    "- Dejar mensajes de apoyo y aliento \u{2764}\u{FE0F}\n" +
-                    "- Compartir recuerdos y experiencias \u{1F4AC}\n" +
-                    "- Conectar con otros que apoyan su misión \u{1F44B}\n\n" +
-                    "Cada mensaje significa mucho para él durante su tiempo de servicio misional.\n\n" +
-                    "\u{1F517} Visita el portal: " + portalUrl + "\n\n" +
-                    "\u{2728} ¡Gracias por tu apoyo al Elder Hube! \u{2728}";
+               // Mensaje con el texto solicitado
+               const whatsappMessage =
+                   "Portal Misional - Elder Hube\n\n" +
+                   "Te invito a visitar el Portal Misional dedicado a Elder Hube, quien está sirviendo como misionero en Ecuador.\n\n" +
+                   "En este portal podrás:\n" +
+                   "- Dejar mensajes de apoyo y aliento\n" +
+                   "- Compartir recuerdos y experiencias\n" +
+                   "- Conectar con otros que apoyan su misión\n\n" +
+                   "Cada mensaje significa mucho para él durante su tiempo de servicio misional.\n\n" +
+                   "Visita el portal: " + portalUrl + "\n\n" +
+                   "¡Gracias por tu apoyo al Elder Hube!";
 
-                const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
-                window.open(whatsappUrl, '_blank');
-            });
+               const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(whatsappMessage)}`;
+               window.open(whatsappUrl, '_blank');
+           });
 
             // Abrir modal al hacer clic en una tarjeta de mensaje
             messageCards.forEach(card => {
